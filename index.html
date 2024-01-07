@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 45);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(0, 0, 94);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 24px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            margin: 0 24px;
+        }
+
+        nav ul li :hover {
+            color: rgb(30, 173, 213);
+
+        }
+
+        .Section {
+            display: flex;
+            justify-content: space-around;
+            margin: 12px 0;
+        }
+
+        .Section>div {
+            width: 40%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 12px  0;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .bt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 8px;
+            margin: 50px 0;
+
+        }
+
+        .btn {
+            padding: 4px 8px;
+            font-weight: 400;
+            background-color: rgba(45, 69, 171, 0.784);
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 0.2px solid white;
+        }
+        .btn:hover{
+            color: green;
+        }
+        @media screen and (max-width:600px){
+            .Section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 12px ;
+        }
+        .Section>div {
+            width: 80%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 12px  0;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px ;
+        }
+        .btn{
+            width: 210px;
+            height: 40px;
+        }
+        }
+        @media screen and (max-width:800px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 124px;
+        padding: 20px;
+    }
+    nav .right ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    nav .right ul li {
+        padding: 5px;
+    }
+}
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vikhil's Profile</div>
+            <div class="right">
+                <ul>
+                    <li><a href="https://www.instagram.com/vikhil_vikki/">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/vikhil-k-11a0aa24a/">About</a></li>
+                    <li><a href="https://github.com/Vikhilvikki">Projects</a></li>
+                    <li><a href="https://wa.me/qr/BLNPKMMTJKOMO1">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="Section">
+        <div class="leftSection">Hello,
+            <div>
+                My name is <span style="color: rgb(58, 131, 240);">Vikhil </span> and Im A Beginner
+            </div>
+            <span id="element" style="color: rgb(58, 131, 240);"></span>
+            <br><br><span>Scroll Down. . . </span>
+        </div>
+
+        <div class="rightSection">
+            <img src="download.png" alt="">
+        </div>
+    </section>
+    <div class="bt">
+        <button class="btn" onclick="window.location = 'Profile.html'">Get to Know more</button>
+    </div>
+    <hr>
+   
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front end Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
